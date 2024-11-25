@@ -1,0 +1,82 @@
+.header{
+    width: 100vw;
+    margin: 0;
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #2e2e2e;
+
+}
+
+.headerTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 7vh;
+}
+
+.nameOfHeader{
+    margin: 0;
+    color: #ffcc00;
+    font-size: 50px;
+
+}
+
+.headerBot{
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.searchInput {
+    width: 20vw;
+    height: 3vh;
+    border-radius: 5px;
+    border: 2px solid gray;
+    background-color: black;
+    color: white;
+    position: absolute; /* Абсолютное позиционирование */
+    margin-left: 40vw;
+}
+
+.searchInput::placeholder{
+    color: white;
+}
+.homeButton{
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    margin-left: 36vw;
+
+}
+.authButton{
+
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 90vw;
+}
+.searchButton{
+    display: flex;
+    position: absolute;
+    margin-left: 61.5vw;
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+
+}

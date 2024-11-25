@@ -1,0 +1,41 @@
+.container {
+    padding: 20px;
+    text-align: center;
+
+}
+
+.moviesGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: black;
+}
+
+.movieCard {
+    background-color: #2e2e2e;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer; /* Добавьте, чтобы указать, что элемент кликабельный */
+    transition: transform 0.2s;
+}
+
+.moviePoster {
+    max-width: 100%;
+    width: 200px; /* Ширина постера */
+    border-radius: 8px; /* Скругление постера */
+    overflow: hidden; /* Чтобы содержимое не выходило за границы */
+    margin-bottom: 10px; /* Отступ от заголовка */
+    text-decoration: none;
+}
+.movieCard:hover {
+    transform: scale(1.05); /* Небольшая анимация при наведении */
+}
+.name{
+    font-size: 15px; /* Размер шрифта */
+    margin: 8px 0; /* Отступы сверху и снизу */
+    font-weight: bold; /* Жирный шрифт */
+    max-width: 200px;
+}
