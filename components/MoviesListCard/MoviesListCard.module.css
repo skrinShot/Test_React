@@ -114,14 +114,14 @@
     margin-top: 5vh;
 }
 .nameActor{
-    background-color: rgba(0, 0, 0, 0.5); /* Чёрный фон с 50% прозрачности */
-    padding: 10px; /* Добавьте отступы, если нужно */
-    border-radius: 5px; /* Сделать углы закруглёнными (по желанию) */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
     color: white;
 }
 .character{
-    background-color: rgba(0, 0, 0, 0.5); /* Чёрный фон с 50% прозрачности */
-    padding: 10px; /* Добавьте отступы, если нужно */
-    border-radius: 5px; /* Сделать углы закруглёнными (по желанию) */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
     color: white;
 }

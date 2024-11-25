@@ -37,7 +37,7 @@
     border: 2px solid gray;
     background-color: black;
     color: white;
-    position: absolute; /* Абсолютное позиционирование */
+    position: absolute;
     margin-left: 40vw;
 }
 

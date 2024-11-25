@@ -24,7 +24,7 @@ const Search = () => {
     }, [query]);
 
     const handleMovieClick = (id: number) => {
-        router.push(`/movie/${id}`); // Перенаправление на страницу фильма
+        router.push(`/movie/${id}`);
     };
 
     return (
@@ -39,7 +39,7 @@ const Search = () => {
                         <div
                             key={movie.id}
                             className={styles.movieCard}
-                            onClick={() => handleMovieClick(movie.id)} // Логика клика
+                            onClick={() => handleMovieClick(movie.id)}
                         >
                             <img
                                 src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`}

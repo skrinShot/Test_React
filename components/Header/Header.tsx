@@ -3,7 +3,7 @@ import styles from "./Header.module.css";
 import { useState } from "react";
 import { useRouter } from "next/router";
 const goToHome = () => {
-    window.location.href = "/"; // Полный перезапуск страницы
+    window.location.href = "/";
 };
 
 const toggleAuthModal = () => {
@@ -12,17 +12,16 @@ const toggleAuthModal = () => {
 
 const Header: React.FC = () => {
 
-    const [searchQuery, setSearchQuery] = useState(""); // Добавлено состояние строки поиска
+    const [searchQuery, setSearchQuery] = useState("");
     const router = useRouter();
 
     const handleSearch = (event?: React.KeyboardEvent<HTMLInputElement>) => {
         if (event && event.key !== "Enter") {
-            // Если событие существует, но клавиша не Enter, выходим
             return;
         }
 
         if (searchQuery.trim() !== "") {
-            router.push(`/search?query=${encodeURIComponent(searchQuery)}`); // Перенаправление на страницу поиска
+            router.push(`/search?query=${encodeURIComponent(searchQuery)}`);
         }
     };
     return(
@@ -44,8 +43,8 @@ const Header: React.FC = () => {
                     type="text"
                     value={searchQuery}
                     className={styles.searchInput}
-                    onChange={(e) => setSearchQuery(e.target.value)} // Обновление состояния строки поиска
-                    onKeyPress={handleSearch} // Обработка нажатия клавиш
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    onKeyPress={handleSearch}
                     placeholder="Search for a movie..."
                 />
 

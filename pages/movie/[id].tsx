@@ -18,7 +18,7 @@ const MovieDetail = () => {
                     `https://api.themoviedb.org/3/movie/${id}/credits?api_key=${process.env.NEXT_PUBLIC_TMDB_API_KEY}`
                 );
                 const data = await response.json();
-                setActors(data.cast.slice(0, 10)); // Берём только первых 10 актёров
+                setActors(data.cast.slice(0, 10));
             }
         };
 

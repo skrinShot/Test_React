@@ -2,15 +2,15 @@ export interface Movie {
     id: number;
     title: string;
     poster_path: string;
-    backdrop_path: string; // Свойство для фонового изображения
+    backdrop_path: string;
     overview: string;
     release_date: string;
     vote_average: number;
 }
 export interface Video {
-    key: string; // Уникальный ключ видео
-    site: string; // Платформа видео (например, YouTube)
-    type: string; // Тип видео (например, Trailer)
+    key: string;
+    site: string;
+    type: string;
 }
 export interface Actor {
     id: number;

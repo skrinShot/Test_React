@@ -1,6 +1,6 @@
 import React from "react";
-import {Movie} from "@/interfaces/Movie"; // Интерфейс фильма
-import styles from "./MoviesListCard.module.css"; // Стили для карточки фильма
+import {Movie} from "@/interfaces/Movie";
+import styles from "./MoviesListCard.module.css";
 import Link from "next/link";
 
 // Описание пропсов для MovieCard

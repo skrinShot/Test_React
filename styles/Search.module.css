@@ -18,24 +18,24 @@
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-    cursor: pointer; /* Добавьте, чтобы указать, что элемент кликабельный */
+    cursor: pointer;
     transition: transform 0.2s;
 }
 
 .moviePoster {
     max-width: 100%;
-    width: 200px; /* Ширина постера */
-    border-radius: 8px; /* Скругление постера */
-    overflow: hidden; /* Чтобы содержимое не выходило за границы */
-    margin-bottom: 10px; /* Отступ от заголовка */
+    width: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
     text-decoration: none;
 }
 .movieCard:hover {
-    transform: scale(1.05); /* Небольшая анимация при наведении */
+    transform: scale(1.05);
 }
 .name{
-    font-size: 15px; /* Размер шрифта */
-    margin: 8px 0; /* Отступы сверху и снизу */
-    font-weight: bold; /* Жирный шрифт */
+    font-size: 15px;
+    margin: 8px 0;
+    font-weight: bold;
     max-width: 200px;
 }

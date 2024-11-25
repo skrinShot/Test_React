@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./Pagination.module.css";
 
 interface PaginationProps {
-    currentPage: number; // Текущая страница
-    totalPages: number; // Общее количество страниц
-    onPageChange: (page: number) => void; // Функция, вызываемая при смене страницы
+    currentPage: number;
+    totalPages: number;
+    onPageChange: (page: number) => void;
 }
 
 const Pagination: React.FC<PaginationProps> = ({
@@ -15,8 +15,8 @@ const Pagination: React.FC<PaginationProps> = ({
     // Генерация массива номеров страниц
     const getPageNumbers = () => {
         const pageNumbers = [];
-        const startPage = Math.max(1, currentPage - 2); // Две страницы перед текущей
-        const endPage = Math.min(totalPages, currentPage + 2); // Две страницы после текущей
+        const startPage = Math.max(1, currentPage - 2);
+        const endPage = Math.min(totalPages, currentPage + 2);
 
         for (let i = startPage; i <= endPage; i++) {
             pageNumbers.push(i);
